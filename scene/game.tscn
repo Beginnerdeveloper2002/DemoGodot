@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://3ndfcep45sqy"]
+
+[ext_resource type="Texture2D" uid="uid://dc781dajpdxd2" path="res://SPRITE/space.jpg" id="1_1s15p"]
+[ext_resource type="PackedScene" uid="uid://dmn61cs4hg8sf" path="res://scene/tank.tscn" id="2_eh4hr"]
+
+[node name="game" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(577.5, 323)
+scale = Vector2(1.88725, 1.60294)
+texture = ExtResource("1_1s15p")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_eh4hr")]
+position = Vector2(190, 244)
+SPEED = 60
