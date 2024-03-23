@@ -13,7 +13,5 @@ func _physics_process(delta):
 		velocity.y+=SPEED * delta
 	if Input.is_action_pressed("up"):
 		velocity.y-=SPEED * delta
-	else:
-		velocity.y*=0.8
 	move_and_slide()
 	
