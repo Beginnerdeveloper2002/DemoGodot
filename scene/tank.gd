@@ -9,5 +9,3 @@ func _physics_process(delta):
 		position.y+=SPEED
 	if Input.is_action_pressed("up"):
 		position.y-=SPEED
-
-	
